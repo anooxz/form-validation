@@ -1,0 +1,46 @@
+div{
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max-content;
+    padding: 20px ;
+    border-radius: 20px;
+    background: #2E43FF;
+}
+
+input{
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+input,button{
+    padding: 10px;
+    border-radius: 20px;
+    border: transparent;
+
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:sans-serif;
+}
+
+
+small{
+    color:#ffb3b3;
+    min-height:18px;
+}
+
+
+
+button:disabled{
+    cursor:not-allowed;
+    opacity:0.6;
+}
