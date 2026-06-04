@@ -1,15 +1,15 @@
 var inputName = document.getElementById("name")
 var inputEmail = document.getElementById("email")
 var inputPassword = document.getElementById("password")
-var phoneNumber = document.getElementById("pnumber")
-var cpassword = document.getElementById("cpassword")
+// var phoneNumber = document.getElementById("pnumber")
+// var cpassword = document.getElementById("cpassword")
 var submitBtn = document.getElementById("SubmitBtn")
 
 var nameError = document.getElementById("nameError")
 var emailError = document.getElementById("emailError")
 var passError = document.getElementById("passwordError")
-var phError = document.getElementById("phError")
-var cpassError = document.getElementById("cpasswordError")
+// var phError = document.getElementById("phError")
+// var cpassError = document.getElementById("cpasswordError")
 
 function validateForm() {
     let isValid = true
@@ -46,26 +46,26 @@ function validateForm() {
         passError.textContent = ""
     }
 
-    if(cpassword.value !== inputPassword.value){
-        cpassword.style.border = "2px solid red";
-        cpassError.textContent = "Passwords do not match"
-        isValid = false
-    } 
-    else {
-        cpassword.style.border = "";
-        cpassError.textContent = ""
-    }
+    // if(cpassword.value !== inputPassword.value){
+    //     cpassword.style.border = "2px solid red";
+    //     cpassError.textContent = "Passwords do not match"
+    //     isValid = false
+    // } 
+    // else {
+    //     cpassword.style.border = "";
+    //     cpassError.textContent = ""
+    // }
     
 
-    if(phoneNumber.value.length !==10){
-        phoneNumber.style.border = "2px solid red";
-        phError.textContent="Enter 10 Numbers"
-        isValid=false
-    }
-     else {
-        phoneNumber.style.border = "";
-        phError.textContent = ""
-    }
+    // if(phoneNumber.value.length !==10){
+    //     phoneNumber.style.border = "2px solid red";
+    //     phError.textContent="Enter 10 Numbers"
+    //     isValid=false
+    // }
+    //  else {
+    //     phoneNumber.style.border = "";
+    //     phError.textContent = ""
+    // }
     
 
     submitBtn.disabled = !isValid
@@ -75,8 +75,8 @@ function validateForm() {
 inputName.addEventListener("input", validateForm)
 inputEmail.addEventListener("input", validateForm)
 inputPassword.addEventListener("input", validateForm)
-phoneNumber.addEventListener("input", validateForm)
-cpassword.addEventListener("input",validateForm)
+// phoneNumber.addEventListener("input", validateForm)
+// cpassword.addEventListener("input",validateForm)
 
 submitBtn.addEventListener("click", function () {
     alert("Registration Successful!")
